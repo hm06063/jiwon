@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "628352212188",
+    "firebase_url": "https://bookdb-b1091.firebaseio.com",
+    "project_id": "bookdb-b1091",
+    "storage_bucket": "bookdb-b1091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628352212188:android:d6d5f54f522cbf84752819",
+        "android_client_info": {
+          "package_name": "org.techtown.a201111"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628352212188-o2msra8ot36gq3f277flsn07fhh35vdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.a201111",
+            "certificate_hash": "2aafebf72222331c8a4233e410947b01acfbe405"
+          }
+        },
+        {
+          "client_id": "628352212188-pdorjja224m36octpf6ka7pfkbqp9104.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxyKx1HSX8QsVr8b2SAW1avdnlxu345Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628352212188-pdorjja224m36octpf6ka7pfkbqp9104.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628352212188:android:eddbecacde210971752819",
+        "android_client_info": {
+          "package_name": "org.techtown.a201123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628352212188-pdorjja224m36octpf6ka7pfkbqp9104.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxyKx1HSX8QsVr8b2SAW1avdnlxu345Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628352212188-pdorjja224m36octpf6ka7pfkbqp9104.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
