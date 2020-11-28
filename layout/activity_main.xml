@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2d2d2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingTop="30dp">
+
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="오늘의 A word"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/rL"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/mainBG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/awordbg2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mainBG"
+                android:layout_alignTop="@id/mainBG"
+                android:layout_alignRight="@id/mainBG"
+                android:layout_alignBottom="@id/mainBG"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:onClick="goDetail"
+                android:text="오늘의 aword 나타나는 자리"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="280dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="상세보기"
+                app:backgroundTint="#737373"
+                app:cornerRadius="0dp"
+                android:layout_margin="3dp"
+                android:onClick="goDetail"/>-->
+
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="임시버튼"
+                android:onClick="pushLikeBtn"/>-->
+
+
+            <TextView
+                android:id="@+id/cateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="카테고리 설정"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:background="@color/green"/>
+
+            <ImageView
+                android:id="@+id/nextBtn"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@drawable/nextbtn"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+
+            <ImageView
+                android:id="@+id/likeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="pushLikeBtn"
+                android:src="@drawable/emptyhrt"
+                android:layout_toLeftOf="@+id/nextBtn"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+
+
+
+            <!--Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="pushLikeBtn"
+                android:src="@drawable/emptyhrt"
+                app:backgroundTint="#737373"
+                app:cornerRadius="0dp"
+                android:layout_margin="3dp"/>-->
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom|center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="홈"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="0dp" />
+
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goSetting"
+            android:text="설정"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_myList"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goMyList"
+            android:text="마이리스트"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goLogin"
+            android:text="프로필"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

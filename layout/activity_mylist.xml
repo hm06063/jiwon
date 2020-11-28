@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2d2d2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이리스트"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cddc39"
+        android:text="마이리스트"
+        android:textSize="20dp"
+        android:padding="10dp"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goHome"
+            android:text="홈"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goSetting"
+            android:text="설정"
+            app:backgroundTint="@color/gray"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_myList"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="마이리스트"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="0dp" />
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goLogin"
+            android:text="프로필"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

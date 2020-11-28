@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2d2d2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/join" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:text="※ 실제 E-mail을 등록하셔야 정상적인 비밀번호 찾기가 가능합니다."
+            android:gravity="center_horizontal" />-->
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/greenBG"
+            android:padding="10dp">
+
+
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="E-MAIL ADDRESS"
+                android:padding="5dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="PW"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:background="@color/white"/>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:layout_gravity="center_horizontal"
+            android:text="회원가입" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:text="이미 계정이 있으시다면 로그인해주세요"
+            android:gravity="center_horizontal" />-->
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textViewSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="goLoginInput"
+                android:text="로그인 화면으로 이동"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cddc39"
+        android:text="마이리스트"
+        android:textSize="20dp"
+        android:padding="10dp"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

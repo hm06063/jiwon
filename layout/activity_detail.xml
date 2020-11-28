@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/backbtn"
+        android:onClick="pushBackBtn"/>
+
+   <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cddc39"
+        android:text="상세보기"
+        android:textSize="20dp"
+        android:padding="10dp"/>-->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/book2"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="정의란 무엇인가는 아주 재밌는 책이예용~"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:text="마이클 샌델"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/bookEx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="이 책은 어렵지만 재밌습니다. 하지만 조금 어려울지도 몰라요"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="@color/greenBG"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="구매페이지로 이동"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/addMyList"
+            android:onClick="pushAddBtn"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="마이리스트에 추가"
+            android:background="#d2d2d2"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

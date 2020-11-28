@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#d2d2d2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cddc39"
+        android:text="설정"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#000000"/>-->
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="3"
+        android:paddingTop="150dp"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/loginpf"
+            android:layout_margin="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="10dp"
+                android:text="abc@abcd.com"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:paddingRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="로그아웃"
+                android:onClick="goLogout"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+
+        <!--<EditText
+            android:layout_width="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="ID"
+            android:inputType="text"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="5dp"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="PW"
+            android:inputType="textPassword"
+            android:padding="5dp"/>-->
+
+        <!--<TextView
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="#d2d2d2"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="로그인"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="회원가입"
+            android:textAlignment="center" />-->
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goHome"
+            android:text="홈"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goSetting"
+            android:text="설정"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_myList"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="goMyList"
+            android:text="마이리스트"
+            app:backgroundTint="#737373"
+            app:cornerRadius="0dp" />
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="프로필"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="0dp" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
